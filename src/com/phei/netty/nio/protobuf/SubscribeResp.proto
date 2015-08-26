@@ -1,0 +1,8 @@
+package com.phei.netty.nio.protobuf;
+option java_package = "com.phei.netty.nio.protobuf";
+option java_outer_classname = "SubscribeRespProto";
+message SubscibeResp {
+    required int32 subReqID = 1;
+    required int32 respCode = 2;
+    required string desc = 3;
+}
