@@ -122,7 +122,7 @@ public class WebSocketServerHandler extends SimpleChannelInboundHandler<Object> 
         // Send the uppercase string back.
         String request = ((TextWebSocketFrame) frame).text();
         System.err.printf("%s received %s%n", ctx.channel(), request);
-        ctx.channel().write(new TextWebSocketFrame(request.toUpperCase()));
+        ctx.channel().write(new TextWebSocketFrame("server resposne :"+request.toUpperCase()));
     }
 
     private static void sendHttpResponse(

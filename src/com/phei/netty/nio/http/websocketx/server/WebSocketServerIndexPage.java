@@ -38,6 +38,7 @@ public final class WebSocketServerIndexPage {
                 "if (window.WebSocket) {" + NEWLINE +
                 "  socket = new WebSocket(\"" + webSocketLocation + "\");" + NEWLINE +
                 "  socket.onmessage = function(event) {" + NEWLINE +
+                        " debugger;"+NEWLINE+
                 "    var ta = document.getElementById('responseText');" + NEWLINE +
                 "    ta.value = ta.value + '\\n' + event.data" + NEWLINE +
                 "  };" + NEWLINE +
